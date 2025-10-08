@@ -494,7 +494,6 @@ async def addxp(ctx, member: Option(discord.Member, "member"), amount: Option(in
 async def removexp_prefix(ctx: commands.Context, member: discord.Member, amount: int):
     if not is_admin_member(ctx.author):
         return await ctx.send("❌ You need Administrator permission to use this.")
-      dministrator permission to use this.", ephemeral=True)
     await reset_user_xp(member.id, ctx.guild.id)
     await ctx.respond(f"✅ Reset XP for {member.mention}")
 
