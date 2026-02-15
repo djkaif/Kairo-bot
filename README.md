@@ -1,3 +1,3 @@
 ``` python
-pip
+python bot.py
 ```
